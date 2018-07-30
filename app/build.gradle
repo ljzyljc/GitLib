@@ -3,8 +3,7 @@ if (isDebug.toBoolean()){
     apply plugin: 'com.android.application'
 }else{
     apply plugin: 'com.android.library'
-    apply plugin: 'com.github.dcendents.android-maven'
-    group='com.github.wustor'
+
 }
 apply plugin: 'kotlin-android'
 
@@ -16,7 +15,7 @@ android {
         if (isDebug.toBoolean()){
             applicationId "com.finance.commonlib"
         }
-        minSdkVersion 17
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
